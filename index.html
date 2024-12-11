@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <style>
+
         *{
             box-sizing: border-box;
             margin: 0;
@@ -19,52 +20,62 @@
             font-family: Arial, sans-serif;
         }
         /* Header Section */
-        header{
-            height:8vh;
+        /* Header Section */
+                /* Base Styles */
+        header {
+            height: 8vh;
             width: 100%;
             position: fixed;
             top: 0;
             z-index: 12;
         }
-        .navbar{
+
+        .navbar {
             width: 100%;
             height: 10vh;
             display: flex;
             justify-content: space-between;
+            align-items: center;
             background-color: rgba(22, 34, 57, 0.95);
             padding: 10px;
-            padding-top: 15px; 
+            padding-top: 15px;
         }
-        .gs{
+
+        .gs {
             text-decoration: none;
             color: white;
             font-size: 38px;
             font-weight: 600;
-            font-family: 'Arial', sans-serif; 
+            font-family: 'Arial', sans-serif;
         }
-        .grade{
-            color: #f5a425; 
-            padding-right:10px;
+
+        .grade {
+            color: #f5a425;
+            padding-right: 10px;
         }
-        .navcls{
+
+        .navcls {
             display: flex;
             gap: 25px;
             font-size: 18px;
-            padding-top:10px ;
             margin-right: 25px;
         }
+
         .navcls li {
             list-style-type: none;
         }
-        .navcls li a{
-            color:white;
+
+        .navcls li a {
+            color: white;
             text-decoration: none;
-            font-family: 'Arial', sans-serif; 
+            font-family: 'Arial', sans-serif;
             padding: 10px;
         }
-        .navcls li a:hover{
+
+        .navcls li a:hover {
             border: 2px solid #f5a425;
         }
+
 
 
 
@@ -604,371 +615,341 @@
 
 
         /* Media Queries foe Responsive Pages */
-        @media screen and (width<576px){
-
-            *{
-                box-sizing: border-box;
-                margin: 0;
-                padding: 0;
-                font-family: Arial, sans-serif;
-            }
-            /* Header Section */
-            header{
-                height:8vh;
-                width: 100%;
-                position: fixed;
-                top: 0;
-                z-index: 12;
-            }
-            .navbar{
-                width: 100%;
-                height: 10vh;
-                display: flex;
-                justify-content: space-between;
-                background-color: rgba(22, 34, 57, 0.95);
-                padding: 5px;
-                padding-top: 15px; 
-            }
-            .logo a{
-              font-size:22px;  
-            }
-            .gs{
-                text-decoration: none;
-                color: white;
-                font-size: 38px;
-                font-weight: 600;
-                font-family: 'Arial', sans-serif; 
-            }
-            .grade{
-                color: #f5a425; 
-                padding-right:10px;
-            }
-            .navcls{
-                display: none;
-            }
-            .navcls li {
-                /* list-style-type: none; */
+    @media screen and (width<480px){
+            .s4{
                 display:none;
             }
-            .navcls li a{
-                color:white;
-                text-decoration: none;
-                font-family: 'Arial', sans-serif; 
-                padding: 10px;
-            }
-            .navcls li a:hover{
-                border: 2px solid #f5a425;
-            }
+    }
+    @media screen and (max-width: 480px) {
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
 
 
+        /* Header Section */
 
-
-
-
-
-
-            /* Home Section */
-
-            .home{ 
-                margin-top: 5px;
-                height: 100vh;
-                width: 100vw; 
-                background-color: rgba(38, 38, 72, 0.701);
-                /* Prevents any content overflow */
-            }
-            .homevideo video{
-                width: 100vw;
-                height: 100vh;
-                object-fit: cover; /* Ensures the video covers the entire viewport */
-                position: absolute; /* Position the video absolutely */
-                z-index: -3;
-            }
-            .home1{
-                position: absolute;
-                top: 18%;  /* Centers the text vertically */
-                z-index: 2; /* Ensures the text is above the video */
-                color: white; /* Set text color to make it stand out against the video */
-                text-align: center;
-                line-height: 1.5;
-            }
-            .home1 h6{
+        .navcls {
                 display: none;
-            }
-            .home1 h1{
-                font-size:32px;
-                margin-top:65px;
-            }
-            .h1 span{
-                font-size:32px; 
-            }
-            .btn1{
-                margin-top: 2.5vh;
-            }
-            .btn1a{
-                padding: 10px 15px;
-                font-size: 14px;
-                font-weight: 200;
-            }
-            .home2{ 
-                position: absolute; 
-                z-index: 2; /* Ensures the text is above the video */
-                color: white;  
-                line-height: 1; 
-                display: flex;
                 flex-direction: column;
-                margin-top: -120px;
-            } 
-            .home2a,.home2b,.home2c{
-                height: 55px;
-                width: 250px;
-                margin-right: 50px;
-                margin-left:50px;
-                border: 2px solid black;
-                background-color: rgb(3, 3, 50);
-                display:flex;
-                flex-direction: column;
-                justify-content: center; 
+                position: absolute;
+                top: 8vh; /* Below the navbar */
+                right: 0;
+                width: 100vw; /* Full width */
+                background-color: rgba(22, 34, 57, 0.95);
+                padding: 10px 0;
+                z-index: 10;
+            }
+
+            .navcls li {
                 text-align: center;
-                margin-top: 5%;
+                margin: 10px 0;
             }
-            .sp1,.sp2,.sp3{
-                font-size: 16px; 
+
+            /* Menu Icon */
+            .menu-icon {
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                color: white;
+                font-size: 28px;
+                cursor: pointer;
+                position: absolute;
+                right: 10px; /* Align to the right corner */
+                top: 50%;
+                transform: translateY(-50%);
+                border: 2px solid #f5a425;
+                padding:10px;
             }
-            .p1,.p2,.p3{
-                font-size: 14px;
+
+            /* Toggle navigation menu */
+            .navbar.active .navcls {
+                display: flex;
             }
-            .home2a a,.home2b a,.home2c a{
-                font-size: 12px;
-            } 
+
+
+
+        /* Home Section */
+        .home {
+            margin-top:0;
+            height: 100vh;
+            width: 100vw;
+            background-color: rgba(38, 38, 72, 0.701);
+        }
+
+        .homevideo video {
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+            position: absolute;
+            z-index: -3;
+        }
+
+        .home1 {
+            position: absolute;
+            top: 15%;
+            z-index: 2;
+            color: white;
+            text-align: center;
+            line-height: 1.5;
+        }
+
+        .home1 h6 {
+            display: none;
+        
+        }
+
+        .home1 h1 {
+            font-size: 24px;
+            margin-top: 250px;
+        }
+
+        .btn1 {
+            margin-top: 2vh;
+        }
+
+        .btn1a {
+            padding: 8px 12px;
+            font-size: 12px;
+        }
+
+        .home2 {
+            position: absolute;
+            margin-left: 60px;
+            z-index: 2;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            margin-top: -100px;
+        }
+
+        .home2a,
+        .home2b,
+        .home2c {
+            height: 45px;
+            width: 200px;
+            margin: 10px auto;
+            border: 2px solid black;
+            background-color: rgb(3, 3, 50);
+            text-align: center;
+        }
+
+        .sp1,
+        .sp2,
+        .sp3 {
+            font-size: 14px;
+        }
+
+        .p1,
+        .p2,
+        .p3 {
+            font-size: 12px;
+        }
+
+        .home2a a,
+        .home2b a,
+        .home2c a {
+            font-size: 10px;
+        }
 
 
 
 
 
+        /* Section 2 */
+        .s2 {
+            background-image: url(bgimgs/choosing-bg.jpg);
+            width: 100%;
+            height: 100vh;
+        }
+
+        .s21 img,
+        .s22 img,
+        .s23 img {
+            width: 75vh;
+            height: 75vh;
+        }
+
+        .i2{
+            width: 70vh;
+        }
+
+        .s21b h3,
+        .s21c h3 {
+            font-size: 24px;
+            margin-left: 10px;
+        }
+
+        .s21b p,
+        .s21c p {
+            font-size: 14px;
+            margin-left: 10px;
+            text-align: justify;
+        }
 
 
-                /* Section 2  */
-                .s2{
-                    background-image: url(bgimgs/choosing-bg.jpg);
-                    width:100%;
-                    height:100vh;
-                }
-                .s21a{
-                    width:100%;
-                    height:100vh;
-                }
-                .s21,.s22,.s23{
-                    width:100%;
-                    height:100vh;
-                    display: flex;
-                    flex-direction:column;
-                    margin-top:20px;
-                }
-                .s21 img{
-                    width:100px;
-                    height:100px;
-                }
-                .s22 img{
-                    width:10px;
-                    height:100px; 
-                }
-                .s23 img{
-                    width:100px;
-                    height:100px; 
-                }
-                .s21a, .s21b, .s21c{
-                    color: white;
-                    width:100%; 
-                }
-                .s21b h3{
-                    color: white;
-                    font-size:32px;
-                    margin-left:20px;
-                    font-weight:600;
-                }
-                .s21c h3{
-                    color: white;
-                    font-size:36px;
-                    margin-left:20px;
-                    font-weight:600;
-                }
-                .s21b p{
-                    color:white;
-                    margin-left:20px;
-                    margin-top:20px;
-                    font-size:14px;
-                }
-                .s21c p{
-                    color:white;
-                    margin-left:20px;
-                    font-size:14px;
-                }
-            
-            
-            
-            
-            
-            
-            
-            
 
-                .s31{
+        /* Section 3 */
+        .s3{
+            height: 92vh;
+        }
+        .s31 {
+            display: flex;
+            flex-direction: column;
+        }
 
-                    display: flex;
-                    flex-direction: column;
+        .s31 h1 {
+            width: 85vw;
+            font-size: 24px;
+            padding: 15px;
+        }
+
+        .formbox {
+            width: 300px;
+            height: 350px;
+            border: 2px solid rgba(255, 255, 255, 0.55);
+            background-color: rgba(145, 145, 145, 0.146);
+        }
+
+        .formbox p {
+            font-size: 14px;
+            padding: 10px;
+        }
+
+        .forms {
+            margin-top: 20px;
+        }
+
+        .btn {
+            padding: 5px;
+            margin: 10px auto;
+            display: block;
+            font-size: 12px;
+            background-color: #f5a425;
+            color: white;
+        }
+
+
+
+        /* Section 5 */
+        .s51 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .s51a{
+                    margin-top:25px ;
+                    width:85%;
                 }
-                .s31 h1{
-                    width:100%;
-                    padding:20px 40px 20px 25px;
-                    font-size:28px;
-                }
-                .formbox{
-                    width:380px;
-                    height:420px;
-                    border: 2px solid rgba(255, 255, 255, 0.55) ;
-                    background-color: rgba(145, 145, 145, 0.146);
-                }
-                .formbox p{ 
-                    font: size 22px;
-                    padding: 15px;
-                }
-                .forms{
-                    margin-top: 25px;
-                }
-                .btn{
-                    color: white;
-                    padding:5px;
-                    background-color: #f5a425;
-                    margin-top: 15px;
-                    margin-left: 40%;
-                }
             
-            
-                .s4{
-                    display:none;
-                }
-            
-            
-            
-            
-            
-            
-            
-            
-                .s51{ 
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                }
-                .s51a{
-                    width:95%;
-                }
                 .s5a1{
                     display: none;
                 }
-                .s5a2{ 
-                    font-size:26px; 
-                }
-                .s5a3{
-                    font-size:26px;
-                    padding: 2px;
-                }
-                .s5a4{
-                    padding: 2px; 
-                    font-size:12px;
-                }
-                .s5a5{ 
-                    display:none;
-                }
-                .external{
-                    text-decoration:none;
-                    margin-top: -50px;
-                    padding: 10px;
-                    font-size:12px;
-                }
-                /* Center the thumbnail on the page */
-                .thumbnail-container {
-                    margin-left:0; 
-                    width: 250px; 
-                    height:250px; 
-                }
-                .vt{
-                    margin-top: 10px;
-                    width:250px;
-                    height:250px;
-                }
             
-            
-            
-            
-            
-
-            
-            
-                .s6{
-                    width:100%;
-                    height:137vh;
-                }
-                .s6 h3{
-                    width:200px;  
-                    margin-top: 15px; 
-                    margin-left:20%; 
-                    font-size:18px;
-                    border:1px solid white;
-                }
-                .s61{
-                    margin-top:10px;
-                    display:flex;
-                    flex-direction: column;
-                    justify-content: center;
-                }
-                .formbox2{
-                    margin:auto;
-                    width:400px;
-                    height:380px; 
-                }
-                .fname{
-                    width:90%;
-                    margin :5%;
-                    margin-top:8%;
-                }
-                .fmail{
-                    width:90%;
-                    margin :5%;
-                    margin-top:2%;        
-                }
-                .fta{
-                    width:90%;  
-                    height:100px;
-                } 
-                .fbtn{
-                    margin:2%;
-                    margin-left:5%;
-                    padding:10px;
-                    font-size:14px;
-                    font-weight: 300;
-                }
-                .s6img{
-                    margin-left:5%;
-                    margin-top:10px;
-                    width:400px;
-                    height:250px
-                }
-            
-            
-            
-            
-            
-                footer{
-                    height:8vh;
-                    background-color: rgba(11, 11, 54, 0.947);
-                }
-                footer p{ 
-                    font-size:10px; 
-                }
-
+        .s5a2,
+        .s5a3 {
+            font-size: 22px;
+            padding: 2px;
         }
+
+        .s5a4 {
+            font-size: 14px;
+            padding: 2px;
+            text-align: justify;
+        }
+
+        .s5a5{
+            text-align: justify;
+            /* display: none; */
+        }
+
+        .external {
+            font-size: 12px;
+            padding: 8px;
+            margin-top: -15px;
+        }
+
+        .thumbnail-container {
+            width: 220px;
+            height: 220px;
+        }
+
+        .vt {
+            width: 220px;
+            height: 220px;
+        }
+
+
+
+        /* Section 6 */
+        .s6 {
+            width: 100%;
+            height: auto;
+        }
+
+        .s61{
+            height: auto;
+        }
+
+        .s6 h3 {
+            font-size: 14px;
+            width: 80vw;
+            text-align: center;
+            margin: 10px auto;
+            margin-top:25px;
+        }
+
+        .formbox2 {
+            width: 300px;
+            margin: 0 auto;
+        }
+
+        .fname,
+        .fmail,
+        .fta {
+            width: 90%;
+            margin: 5%;
+        }
+
+        .fta {
+            height: 150px;
+        }
+
+        .fbtn {
+            margin: 5%;
+            padding: 8px;
+            font-size: 12px;
+            width:60vw;
+        }
+
+        .s6img {
+            width: 300px;
+            height: 200px;
+            margin: 10px auto;
+        }
+
+
+
+
+        /* Footer */
+        footer {
+            height: auto;
+            padding: 10px;
+            background-color: rgba(11, 11, 54, 0.947);
+        }
+
+        footer p {
+            font-size: 10px;
+            text-align: center;
+        }
+    }
+
+
+
 
 
 
@@ -977,24 +958,29 @@
 </head>
 <body>
     <!-- Nav Bar Using header Tag -->
+    <!-- Navbar -->
     <header>
-        <div class="navbar">
+        <div class="navbar" onclick="document.querySelector('.navbar').classList.toggle('active')">
             <div class="logo">
                 <a href="#" class="gs">
                     <span class="grade">GRAD</span>SCHOOL
                 </a>
             </div>
+            <!-- Menu Icon -->
+            <div class="menu-icon" id="menu">&#9776;</div>
+
             <nav>
                 <ul class="navcls">
                     <li><a href="#home">HOME</a></li>
                     <li><a href="#s2">ABOUT US</a></li>
-                    <li><a href="#s4">COURSE</a></li>
-                    <li><a href="#s5">CONTACT</a></li>
-                    <li><a href="https://www.linkedin.com/in/abhinavsaivannam/">EXTERNAL</a></li>
+                    <li><a href="#s3">COURSE</a></li>
+                    <li><a href="#s6">CONTACT</a></li>
+                    <li><a href="#s5">EXTERNAL</a></li>
                 </ul>
             </nav>
         </div>
     </header>
+
 
 
 
@@ -1088,7 +1074,7 @@
                     <div class="carousel-item active" style="width: 100%; height: 100vh;">
                         <div class="s21" style="display: flex;">
             
-                            <img src="s2/choose-us-image-01.png" class="d-block" style="width:350px; height: 350px;" alt="Slide 1">
+                            <img src="s2/choose-us-image-01.png" class="d-block i2" style="width:350px; height: 350px;" alt="Slide 1">
                             <div class="s21b">
                                 <h3>Best Education</h3>
                                 <p>Grad School is free educational HTML template with Bootstrap 4.5.2 CSS layout. Feel free to use it for educational or commercial purposes. You may want to make <a href="s2/pp.jpg" class="as2">a little donation</a> to TemplateMo. Please tell your friends about us. Thank you.</p>
@@ -1103,7 +1089,7 @@
                     <div class="carousel-item" style="width: 100%; height: 100vh;">
                         <div class="s22" style="display: flex;">
             
-                            <img src="s2/choose-us-image-02.png" class="d-block" style="width:350px; height: 350px;" alt="Slide 1">
+                            <img src="s2/choose-us-image-02.png" class="d-block i2" style="width:350px; height: 350px;" alt="Slide 1">
                             <div class="s21b">
                                 <h3>Top Level</h3>
                                 <p>You can modify this HTML layout by editing contents and adding more pages as you needed. Since this template has options to add dropdown menus, you can put many HTML pages.</p>
@@ -1117,7 +1103,7 @@
                     <!--Slide 3-->
                     <div class="carousel-item" style="width: 100%; height: 100vh;">
                         <div class="s23" style="display: flex;">
-                            <img src="s2/choose-us-image-03.png" class="d-block" style="width:350px; height: 350px;" alt="Slide 1">
+                            <img src="s2/choose-us-image-03.png" class="d-block i2" style="width:350px; height: 350px;" alt="Slide 1">
                             <div class="s21c">
                                 <h3>Quality Meating</h3>
                                 <p>You are NOT allowed to redistribute this template ZIP file on any template collection website. However, you can use this template to convert into a specific theme for any kind of CMS platform such as WordPress. For more information, you shall <a href="https://www.linkedin.com/in/abhinavsaivannam/" class="as3">contact TemplateMo</a> now.</p>
@@ -1152,7 +1138,7 @@
     <!-- Course Registration -->
     <section class="s3" id="s3">
         <div class="s31">
-            <h1>Take <span style="color: #f5a425;">any Online Course</span> and win $326 for your next class</h1>
+            <h1>Take <span style="color: #f5a425;">any Online Course</span> and win $ 326 for your next class</h1>
             <div class="formbox">
                 <p>Register your free account and 
                     get immediate access to online courses
@@ -1439,7 +1425,7 @@
                     <input type="text" placeholder="Your Name" class="fname">
                     <input type="email" placeholder="Your Mail" class="fmail">
                     <textarea  placeholder="Your message..." rows="8" cols="30" class="fta"></textarea>
-                    <button class="fbtn">SEND MESSAGE YOU</button>
+                    <button class="fbtn">SEND MESSAGE</button>
 
                 </form>
 
